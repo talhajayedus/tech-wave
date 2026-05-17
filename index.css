@@ -13,6 +13,14 @@
 .flex{
     display:flex;
 }
+.gradient-text{
+     background: linear-gradient(207deg, rgb(149, 45, 219) 0%, rgba(199, 46, 163, 1) 38%, rgb(227, 186, 54) 100%);
+   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; 
+
+}
 
 /*header related styles*/   
 .header{
@@ -23,8 +31,13 @@
 }
 .tech-wave-1{
     color:#ffffff;
+    font-size:26px;
 }
+.tech-wave-2{
 
+  font-size: 26px;
+  font-weight: bold;
+}
   
 .nav-bar{
     display:flex;
@@ -45,7 +58,63 @@
     align-items:center;
     justify-content:center;
     gap:9px;
+    border:none;
     border-radius:15px;
     color:#ffffff;
-    background:lininer-gradient(to top right,#F7E93F,#FB09B4,#9100F8);
+    background: #833AB4;
+    background: linear-gradient(207deg, rgba(131, 58, 180, 1) 10%,
+     rgba(199, 46, 163, 1) 38%, rgba(252, 176, 69, 1) 100%);
+}
+
+/* hero section style*/
+#hero-bg{
+    background-image:url("./assets/hero-bg.png");
+    width:100%;
+    height:100vh;
+    z-index:-2;
+    background-repeat:no-repeat;
+    background-size: cover;
+    position:relative;
+    
+
+}
+.hero-mic{
+    position:relative;
+    height:300px;
+    width:300px;
+    transform:translateY(0);
+    top:80px;
+    left:470px;
+    
+}
+.round-bg{
+    position:absolute;
+    height:300px;
+    width:300px;
+    z-index:2;
+  
+}
+.mic{
+    position: absolute;
+    z-index:2;
+    top:60px;
+    left:90px;
+}
+.batch{
+    position:absolute;
+    z-index:3;
+    left:auto;
+    right:60px;
+    height:20px;
+    width:45px;
+    border-radius:9px;
+    background-color:#03fa52;
+}
+.batch p{
+    font-size: 15px;
+    font-weight: 500;
+    color:#1A0B2E;
+    padding:5px;
+    text-align: center;
+    justify-items: center;
 }
